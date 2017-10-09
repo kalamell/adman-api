@@ -9,6 +9,7 @@ class Agenda extends CI_Controller {
 
     public function index()
     {
-
+        $rs = $this->db->order_by('id', 'ASC')->get('agenda')->result_array();
+        echo json_encode( array('response' => $rs ) );
     }
 }

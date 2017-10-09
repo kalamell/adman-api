@@ -53,4 +53,5 @@ $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
+$route['backend'] = 'backend/main';
 $route['api/([a-z0-9]+)/(\d+)'] = "api/$1/index/$2";
